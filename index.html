@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./style.css">
+		<title>Document</title>
+	</head>
+
+	<body>
+
+		<div class="wrapper">
+			<form>
+				<div>
+					<label for="m-weight">
+						Paper M-Weight
+						<input type="number" name="m-weight" id="m-weight">
+					</label>
+				</div>
+
+				<div>
+					<label for="quantity">
+						Quantity Ordered
+						<input type="quantity" name="quantity" id="quantity">
+					</label>
+				</div>
+
+				<div>
+					<label for="quoted-price">
+						Quoted Price
+						<input type="number" name="quoted-price" id="quoted-price">
+					</label>
+					<select name="quoted-price-uom" id="quoted-price-uom">
+						<option value="m">Per M</option>
+						<option value="cwt">CWT</option>
+					</select>
+					<div class="quoted-price__display"></div>
+				</div>
+
+				<div>
+					<label for="purchase-price">
+						Purchase Price
+						<input type="number" name="purchase-price" id="purchase-price">
+					</label>
+					<select name="purchase-price-uom" id="purchase-price-uom">
+						<option value="m">Per M</option>
+						<option value="cwt">CWT</option>
+					</select>
+					<div class="purchase-price__display"></div>
+				</div>
+
+				<button>Submit</button>
+
+			</form>
+
+			<div class="price-display">
+				<h1 id="comparison-display"></h1>
+				<h2 id="quoted-price-display"></h2>
+				<h2 id="purchase-price-display"></h2>
+			</div>
+		</div>
+
+
+		<script src="./script.js"></script>
+	</body>
+
+</html>
